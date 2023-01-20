@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GotIdea</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="logo.png" class="logo"></a>
+            <ul>
+                <li><a href="Pagina/index.html">Home</a></a></li>
+                <li><a href="Contacts/contact.html">Contact</a></a></li>
+                <li><a href="Produtcs/produtcs.html">Products</a></a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Case de silicone confortável e elegante para o seu<br>the<span> Iphone</span></h2>
+                <p>A nossa capa de proteçao para iPhone é um acessório indispensável para quem quer proteger o seu aparelho de quedas e danos. 
+                    Ela possui uma proteção de 360 graus que garante a segurança do seu aparelho de todos os ângulos, mesmo em quedas laterais ou de cabeça.</p>
+                <a href="Produtcs/produtcs.html">Ver mais</a>
+                </div>
+                <div class="imgBox">
+             <img src="iphone/13.png" class="Iphone">
+         </div>
+        </div>
+        <ul class="thumb">
+                <li><img src="iphone/blackcase.png" onclick="imgSlider('iphone/blackcase.png');changeCircleColor('#2E2E2E')"></li>
+                <li><img src="iphone/bluecase.png" onclick="imgSlider('iphone/bluecase.png');changeCircleColor('#5858FA')"></li>
+                <li><img src="iphone/purple.png"  onclick="imgSlider('iphone/purple.png');changeCircleColor('#CC2EFA')"></li>
+        </ul>
+        <ul class="sci">
+            <li><a href="https://www.linkedin.com/in/henrique-santos-fernandes-177ab31a9"><img src="sc/linkedin.png"></a></li>
+            <li><a href="https://www.instagram.com/fksabnck/"><img src="sc/instagram.png" ></a></li>
+            <li><a href="#"><img src="sc/twitter.png"  ></a></li>
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector(".Iphone") .src = anything;
+        }
+        function changeCircleColor(color){
+            const circle = document.querySelector('.circle');
+            circle.style.background = color;
+        }
+        function changebottom(color){
+            const a = document.querySelector('.content .textBox.a')
+            a.style.background = color;
+        }
+    </script>
+</body>
+</html>
